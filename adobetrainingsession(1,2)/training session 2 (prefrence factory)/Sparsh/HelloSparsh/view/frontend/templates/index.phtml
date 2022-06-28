@@ -1,0 +1,13 @@
+<?php
+$productCollection = $block->getProductCollection();
+foreach ($productCollection as $product) {
+    echo "<pre>";
+    echo "Product Name:" . " " . $product->getName();
+    echo "<br>";
+    echo "Product Price:" . " " . $product->getPrice();
+    echo "<br>";
+    echo "Product Sku:" . " " . $product->getSku();
+    echo "<br>";
+    echo "Product Image url:" . " " . $block->getImageUrl($product);
+    echo "<br>";
+}

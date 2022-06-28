@@ -1,0 +1,5 @@
+<config>
+  <type name="Magento\Catalog\Model\Product">
+    <plugin name="change_product" type="Custom\Price\Plugin\Product" sortOrder="1"/>
+  </type>
+</config>
